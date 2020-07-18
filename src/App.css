@@ -1,38 +1,406 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap");
+
+body {
+    font-family: "Raleway", sans-serif;
+    background: #eaebef;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.containerApp {
+    max-width: 1500px;
+    display: flex;
+    flex-direction: row;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.containerApp .container-Navbar-Letf {
+    width: 6%;
+    background: #6851d8;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.containerApp .container-Navbar-Letf .nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.containerApp .container-Navbar-Letf .nav .menu-up {
+    margin: 0;
+    margin-bottom: 700%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.containerApp .container-Navbar-Letf .nav .item {
+    margin-bottom: 30px;
+}
+.containerApp .container-Navbar-Letf .nav .item .nav-link{
+    color: #000;
+}
+.containerApp .container-main {
+    width: 90%;
+    background: #eaebef;
+    padding: 0px 20px;
+}
+
+.containerApp .container-main .navbar {
+    background-color: #ffffff;
+    color: #000;
+    padding: 40px;
+    margin-bottom: 27px;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.containerApp .container-main .navbar a {
+    color: #000;
+    padding: 0;
+}
+
+.containerApp .container-main .navbar form {
+    font-size: 30px;
+}
+
+.containerApp .container-main .navbar form .nav-item {
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.containerApp .container-main .section-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.containerApp .container-main .section-container .body-section {
+    width: 80%;
+}
+
+.containerApp .container-main .section-container .body-section .jumbotron {
+    background: rgba(120, 100, 218, 0.53); /* fallback for old browsers */
+    background: -webkit-linear-gradient(left, rgba(120, 100, 218, 0.53) 0%, rgba(148, 189, 244, 1) 100%); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(120, 100, 218, 0.53) 0%, rgba(148, 189, 244, 1) 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 2px 2px 5px #999;
+    color: #ffffff;
+    padding: 40px;
+}
+
+.containerApp .container-main .section-container .body-section .nav {
+    background: #ffffff;
+    padding: 10px;
+    margin-bottom: 27px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #999;
+}
+
+.containerApp .container-main .section-container .body-section .nav .nav-item {
+    padding: 8px;
+    margin: 0px 5px;
+    border-bottom: 2px solid #000;
+}
+
+.containerApp
+.container-main
+.section-container
+.body-section
+.nav
+.nav-item
+.icon {
+    font-size: 60px;
+}
+
+.containerApp
+.container-main
+.section-container
+.body-section
+.nav
+.nav-item
+h4 {
+    padding-left: 20px;
+    margin: 0;
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.containerApp
+.container-main
+.section-container
+.body-section
+.hotel-section
+.title
+h2 {
+    font-weight: 400;
+    margin: 15px 0px 0px 10px;
+}
+
+.containerApp
+.container-main
+.section-container
+.body-section
+.hotel-section
+.main-reserva {
+    margin-top: 27px;
+}
+
+.containerApp
+.container-main
+.section-container
+.body-section
+.hotel-section
+.main-reserva
+.card {
+    margin-bottom: 25px;
+    box-shadow: 2px 2px 5px #999;
+}
+
+.containerApp
+.container-main
+.section-container
+.body-section
+.hotel-section
+.main-reserva
+.card
+.card-img-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.containerApp
+.container-main
+.section-container
+.body-section
+.hotel-section
+.main-reserva
+.card
+.card-img-overlay
+h5 {
+    margin: 0px 0px 100px 0px;
+    font-weight: bolder;
+}
+
+.containerApp
+.container-main
+.section-container
+.body-section
+.hotel-section
+.main-reserva
+.card
+.card-img-overlay
+.btn {
+    font-size: 25px;
+    background: #6851d8;
+    color: #ffffff;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 0.04em 0.04em;
+    border-radius: 50px;
+    padding: 8px 25px;
+}
+
+.containerApp .container-main .section-container .notification-aside {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    background: #ffff;
+    margin-left: 27px;
+    padding: 15px;
+}
+
+.containerApp .container-main .section-container .notification-aside .title h2 {
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.containerApp .container-main .section-container .notification-aside .card {
+    border: none;
+    box-shadow: rgb(221, 219, 219) 1px 1px 10px;
+    margin-bottom: 30px;
+    padding: 8px;
+}
+.containerApp .container-main .section-container .notification-aside .card .link{
+    color: #000;
+    text-decoration: none;
+}
+
+.containerApp
+.container-main
+.section-container
+.notification-aside
+.card
+.card-body {
+    padding: 0;
+}
+
+.containerApp
+.container-main
+.section-container
+.notification-aside
+.card
+.card-body
+.header
+ion-icon {
+    font-size: 30px;
+}
+
+.containerApp
+.container-main
+.section-container
+.notification-aside
+.card
+.card-body
+.header
+h4 {
+    font-size: 18px;
+}
+
+.containerApp
+.container-main
+.section-container
+.notification-aside
+.card
+.card-body
+h4 {
+    font-size: 25px;
+}
+
+.containerApp .container-users {
+    width: 90%;
+    background: #eaebef;
+    padding: 0px 20px;
+}
+
+.containerApp .container-users .jumbotron {
+    width: 100%;
+    background: rgba(120, 100, 218, 0.53); /* fallback for old browsers */
+    background: -webkit-linear-gradient(left, rgba(120, 100, 218, 0.53) 0%, rgba(148, 189, 244, 1) 100%); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(120, 100, 218, 0.53) 0%, rgba(148, 189, 244, 1) 100%);
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #999;
+}
+
+.containerApp .container-users .container-card {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.containerApp .container-users .container-card .row {
+    padding: 0px 20px;
+}
+
+.containerApp .container-users .container-card .info {
+    width: 30%;
+    margin: 5px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #999;
+}
+
+.containerApp .container-users .container-card .info .card-body h4 {
+    color: #000000;
+    font-weight: bolder;
+}
+
+.containerApp .container-calendar {
+    width: 90%;
+    background: #eaebef;
+    padding: 0px 20px;
+}
+
+.containerApp .container-calendar .jumbotron {
+    width: 100%;
+    background: rgba(120, 100, 218, 0.53); /* fallback for old browsers */
+    background: -webkit-linear-gradient(left, rgba(120, 100, 218, 0.53) 0%, rgba(148, 189, 244, 1) 100%); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(120, 100, 218, 0.53) 0%, rgba(148, 189, 244, 1) 100%);
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #999;
+}
+
+.containerApp .container-calendar .container-card .card {
+    margin-bottom: 10px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #999;
+    font-weight: bolder;
+}
+
+.containerApp .container-report {
+    width: 90%;
+    background: #eaebef;
+    padding: 0px 20px;
+}
+
+.containerApp .container-report .jumbotron {
+    width: 100%;
+    background: rgba(120, 100, 218, 0.53); /* fallback for old browsers */
+    background: -webkit-linear-gradient(left, rgba(120, 100, 218, 0.53) 0%, rgba(148, 189, 244, 1) 100%); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(120, 100, 218, 0.53) 0%, rgba(148, 189, 244, 1) 100%);
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #999;
+}
+
+.containerApp .container-report .container-card {
+    margin-bottom: 10px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #999;
+    font-weight: bolder;
+}
+
+.containerApp .container-message {
+    width: 90%;
+    background: #eaebef;
+    padding: 0px 20px;
+}
+
+.containerApp .container-message .jumbotron {
+    width: 100%;
+    background: rgba(120, 100, 218, 0.53); /* fallback for old browsers */
+    background: -webkit-linear-gradient(left, rgba(120, 100, 218, 0.53) 0%, rgba(148, 189, 244, 1) 100%); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(120, 100, 218, 0.53) 0%, rgba(148, 189, 244, 1) 100%);
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #999;
+}
+
+.containerApp .container-message .container-card .card {
+    margin-bottom: 10px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #999;
+    font-weight: bolder;
+}
+
+.containerApp .container-config {
+    width: 90%;
+    background: #eaebef;
+    padding: 0px 20px;
+}
+
+.containerApp .container-config .jumbotron {
+    width: 100%;
+    background: #0f0c29; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #000;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #999;
+}
+
+.containerApp .container-config .container-card .list-group {
+    margin-bottom: 10px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #999;
+    font-weight: bolder;
+}
+.basic-single{
+    width: 250px;
+    font-size: 14px;
 }

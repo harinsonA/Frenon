@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import './App.css'
+import NavbarLetf from "./components/navbarLeft";
+import Home from "./views/home";
+import Calendar from "./views/calendar";
+import Users from "./views/users";
+import Reports from "./views/reports";
+import Graphics from "./views/graphics";
+import injectContext from "./store/appContext";
+import Messages from "./views/messages";
+import Config from "./views/config";
+import MessageDetails from "./components/componentsMessage/message-details";
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="containerApp">
+      <BrowserRouter>
+        <NavbarLetf />
+        <Switch>
+          <Route exact path="/messages/:name" component={MessageDetails} />
+          <Route exact path="/messages" component={Messages} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/calendar" component={Calendar} />
+          <Route exact path="/users" component={Users} />
+          <Route exact path="/reports" component={Reports} />
+          <Route exact path="/graphics" component={Graphics} />
+          <Route exact path="/setting" component={Config} />
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
 
-export default App;
+export default injectContext(App);
